@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742989093 source:c:\users\clatd\onedrive\escritorio\informatica\tdl 1\parctica\p1\ej18\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

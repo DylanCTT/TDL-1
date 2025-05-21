@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1743770965 source:c:\users\clatd\onedrive\escritorio\informatica\tdl 1\parctica\p2\ej3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
