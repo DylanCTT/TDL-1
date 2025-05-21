@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define mayusculas "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#define minusculas "abcdefghijklmnopqrstuvwxyz"
+
+
 void leerOracion (char * ptr);
 void calculoMinusMayus(char * ptr);
 
@@ -27,10 +27,10 @@ void leerOracion(char *ptr){
 void calculoMinusMayus (char *ptr){
     int i,minus=0,mayus=0;
     for (i=0;i<100;i++){
-        if (strchr(mayusculas, ptr[i])!= 0){
+        if (ptr[i]>= 'A')&&(ptr[i]<='Z'){
             mayus++;
         }
-        if (strchr(minusculas, ptr[i])!= 0){
+        if (ptr[i]>= 'a')&&(ptr[i]<='z'){
             minus++;
         }
     }
