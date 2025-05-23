@@ -7,32 +7,27 @@ void calculoMinusMayus(char * ptr);
 
 int main()
 {
+    int i, cant =10;
     char * ptr;
     ptr= (char *) malloc(100*sizeof(char));
-    leerOracion(ptr);
-    calculoMinusMayus(ptr);
+    for(i=0;i<cant;i++){
+        gets(ptr);
+        calculoMinusMayus(ptr);
+    }
     return 0;
 }
 
-void leerOracion(char *ptr){
-    int i, j;
-    for(i=0;i<10;i++){
-        printf("Ingrese una oracion: \n");
-        for(j=0;j<10;j++){
-            gets(ptr);
-        }
-    }
-}
 
 void calculoMinusMayus (char *ptr){
-    int i,minus=0,mayus=0;
-    for (i=0;i<100;i++){
-        if (ptr[i]>= 'A')&&(ptr[i]<='Z'){
+    int i=0 ,minus=0,mayus=0;
+    while (ptr[i]!='\0'){
+        if ((ptr[i]>= 'A')&&(ptr[i]<='Z')){
             mayus++;
         }
-        if (ptr[i]>= 'a')&&(ptr[i]<='z'){
+        if ((ptr[i]>= 'a')&&(ptr[i]<='z')){
             minus++;
         }
+        i++;
     }
-    printf("La cantidad de letras mayusculas es %d, y de minusculas es %d", mayus, minus);
+    printf("La cantidad de letras mayusculas en la oracion es %d, y de minusculas en la oracion es %d", mayus, minus);
 }
