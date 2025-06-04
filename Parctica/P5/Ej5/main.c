@@ -13,6 +13,7 @@ int main()
         printf ("\nError al abrir archivo fuente\n");
         return 1;
     }
+<<<<<<< HEAD
     char **diccionario = NULL;
     int capacidad = 10, cantidad = 0;
     diccionario = malloc(capacidad * sizeof(char*));
@@ -50,6 +51,15 @@ int main()
         free(diccionario[i]);
     }
     free(diccionario);
+=======
+    printf(" Ingrese la palabra que quiere buscar: ");
+    scanf(" %s", str);
+    fscan(f, "%s\n;", act);
+    while (!feof(f) && strcmp(str, 'FIN')!=0){
+
+    }
+
+>>>>>>> 96de3dbc21e2bc7e2a0b436a09edc7e3a89fa5d6
 
     return 0;
 }
