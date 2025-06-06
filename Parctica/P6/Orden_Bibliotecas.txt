@@ -1,0 +1,36 @@
+BIBLIO.H
+
+	#indef BIBLIO_H_INCLUDED
+	#define BIBLIO_H_INCLUDED
+	
+	//Constantes
+	#define N 5
+	
+	//Tipos definidos
+	typedef in num;
+	
+	//Prototipos de funciones
+	void función();
+
+BIBLIO.C
+	
+	#include "biblio.h"
+	
+	//cuerpo de funciones
+	void funcion1(){
+		printf(" Fecha de lanzamiento de GTA VI");
+	}
+	
+	//definición y cuerpo de funciones locales
+
+	char funcionLocal(){
+		return b;
+	}
+	
+MAIN
+
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <biblio.h>
+
+	
